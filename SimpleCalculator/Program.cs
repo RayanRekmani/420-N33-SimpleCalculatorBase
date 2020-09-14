@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using CalculatorLibrary;
 
 namespace SimpleCalculator
 {
@@ -17,7 +18,7 @@ namespace SimpleCalculator
                 //Class to convert user input
                 InputConverter inputConverter = new InputConverter();
 
-                //Class to perform actual calculations
+                //Class to perform actual calculatios
                 CalculatorEngine calculatorEngine = new CalculatorEngine();
 
                 double firstNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());

@@ -1,14 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace SimpleCalculator
+namespace CalculatorEngine
 {
     public class CalculatorEngine
     {
-        public double Calculate (string argOperation, double argFirstNumber, double argSecondNumber)
+        public double Calculate(string argOperation, double argFirstNumber, double argSecondNumber)
         {
             double result;
 
-            switch(argOperation.ToLower())
+            switch (argOperation.ToLower())
             {
                 case "add":
                 case "+":
@@ -31,5 +35,6 @@ namespace SimpleCalculator
             }
             return result;
         }
+
     }
 }
