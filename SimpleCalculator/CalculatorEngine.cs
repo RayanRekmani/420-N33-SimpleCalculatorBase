@@ -27,7 +27,7 @@ namespace SimpleCalculator
                     result = argFirstNumber / argSecondNumber;
                     break;
                 default:
-                    throw new InvalidOperationException("Specified operation is not recognized.");
+                    return result = double.NaN;
             }
             return result;
         }
